@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 //เชื่อม mongoDB
 mongoose.set('strictQuery', false);
-const dbUrl = 'mongodb://127.0.0.1/money'
+const dbUrl = 'mongodb+srv://nut:30082546@cluster0.xqdjphd.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(dbUrl,{
     useNewUrlParser:true,
     useUnifiedTopology:true
