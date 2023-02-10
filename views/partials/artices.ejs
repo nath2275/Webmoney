@@ -1,0 +1,68 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<body>
+    <ul>
+        <% artices.forEach((article) => { %>
+            <li>
+                <h2><%= article.title %></h2>
+                <p><%= article.body%></p>
+            </li>
+            <hr>
+        <% }) %>
+    </ul>
+</body>
+<%- include('../partials/footer') %>
+
+
+
+<script>
+    const searchInput = document.querySelector('.search_bar')
+
+    var arr = ['nutt','fffs','abcd','ddd','eee','a']
+    searchInput.addEventListener("input",(e)=>{
+    })
+</script>
+<% if(textValue === ''){ %>
+    <% console.log('none') %>
+<% }else if(ss.includes(textValue)){ %>
+    <% console.log('item.name') %>
+<% }else{ %>
+    <% console.log(ss.includes(textValue)); %>
+<% }}) %>
+
+
+
+<div class="header">
+    <div class="flex h50">
+        <div class="flex">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrYdCtct1i0vUcEgerqei8cywb1BT-pM_BgQ&usqp=CAU" alt="">
+            </div>
+        </div>
+        
+        <div class="flex">
+            <a href="/addData" class="set"><i class="fa-solid fa-gear "></i></a>
+            <a href="/addData" class="set"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="mainGride">
+    <% Object.values(products).forEach(function(item){%>
+        <div class="blog">
+            <div class="bg">
+                <h2 class="name text_white"><%= item.name %></h2>
+            </div>
+            <div class="bg">
+                <p class="text_white mr">ยอดกู้ : <%= new Intl.NumberFormat().format(item.balance) %> บาท</p>
+                <p class="text_white mr">ดอกเบี้ย : <%= new Intl.NumberFormat().format(Math.floor(item.interest * item.balance / 100)) %> บาท</p>
+            </div>
+            <button class=""><%= item.interest %> %</button>
+        </div>
+    <% }) %>
+</div>
+
+

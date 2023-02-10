@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แก้ไขข้อมูล</title>
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/hearder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+
+    <div class="mainGride">
+
+        <form action="/update" method="POST">
+
+            <input type="hidden" value="<%= products._id %>" name="update_id">
+
+
+            <div class="blog">
+                <div class="bg">
+                    <h1 class="name text_white text_header">ลบ-แก้ไข</h1>
+                </div>
+                <div class="bg">
+                    <p class="text_white mr">ชื่อ</p>
+                    <input type="text" class="input_data" value="<%= products.name %>" name="name">
+                    <p class="text_white mr">ยอดเงิน</p>
+                    <input type="text" class="input_data" value="<%= products.balance %>" name="balance">
+                    <p class="text_white mr">ดอกเบี้ย %</p>
+                    <input type="text" class="input_data" value="<%= products.interest %>" name="interest">
+                    <p class="text_white mr">วันที่</p>
+                    <input type="date" class="input_data" value="<%= products.datelines %>" name="datelines">
+                </div>
+                <button type="submit" class="submit">บันทึก</button>
+            </div>
+            
+        </form>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+     background: linear-gradient(45deg,  #ffa69e, #faf3dd, #b8f2e6, #aed9e0, #5e6472);
+    /* background: rgb(234, 231, 230); */
+    margin-bottom: 100px;
+}
+:root{
+    --text-white:#000000;
+    --text-black:black;
+    --team-color:#dd195a;
+    --blue-team:#6a6ae2;
+    /*แดง-เหลือง-เขียว*/
+}
+
+/* icon */
+.fa-gear,.fa-user,
+.fa-magnifying-glass{
+    color: aliceblue;
+}
+/* icon */
+
+/*text*/
+.text_white{
+    color: var(--text-white);
+}
+.text_black{
+    color: var(--text-white);
+}
+.bg_white{
+    background: var(--text-white);
+}
+
+/* search */
+.search_box ,
+.header{
+    margin-bottom: 20px;
+}
+.search_box{
+    display: flex;
+    justify-content: center;
+}
+.search{
+    width: 800px;
+    height: 45px;
+    padding: 0 20px;
+    border: none;
+    font-size: medium;
+    margin: 10px 0 10px 40px;
+}
+.search_icon{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--team-color);
+    min-width: 60px;
+    height: 45px;
+    margin: 10px 40px 10px 0px;
+}
+
+
+/* menubar */
+.menubar{
+    display: flex;
+    margin: auto;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+.tabMenu{
+    width: 120px;
+    height: 45px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 500;
+    box-shadow: 4px 2px 8px 1px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+
+
+/* user */
+.blog{
+    /*border: 2px solid var(--team-color);*/
+    background: #fff;
+    padding: 50px 50px 100px 50px;
+    /*width: 300px;*/
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px 40px 40px 40px;
+    box-shadow: 4px 5px 14px 6px rgba(0, 0, 0, 0.31);
+}
+.name{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 40px;
+}
+hr{
+    margin: 5px;
+}
+
+.mainGride{
+    max-width: 480px;
+    margin: auto;
+}
+/* user */
+
+
+.input_data{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1.5px solid rgb(186, 193, 199);
+    font-size: medium;
+    border-radius: 5px;
+    margin: 4px auto;
+}
+.submit{
+    width: 80px;
+    height: 35px;
+    border: none;
+    background: var(--blue-team);
+    color: #fff;
+    font-size:medium;
+    font-weight: 500;
+    position: absolute;
+    right: 55px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* text */
+.mr{
+    font-size: large;
+    font-weight: 400;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+.text_header{
+    text-align: center;
+}
+
+/* แทบแจ้งเตือนว่ายังใส่ข้อมูลไม่ครบ */
+.checkKey{
+    color: #d32626;
+    font-size: smaller;
+    font-weight: 400;
+    display: none;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}

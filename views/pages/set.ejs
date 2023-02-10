@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เพิ่มรายชื่อ</title>
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/hearder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <%- include('../partials/header') %>
+    
+
+    <div class="mainGride">
+        
+        <div class="blog">
+            <form method="POST" action="/addData/insert">
+
+                <div class="bg">
+                    <h1 class="name text_white text_header">เพิ่มรายชื่อ</h1>
+                </div>
+                <div class="bg">
+                    <p class="text_white mr">ชื่อ</p>
+                    <input type="text" class="input_data" name="name">
+                    <p class="checkKey">โปรดใส่ชื่อของคุณ</p>
+                    <p class="text_white mr">ยอดเงิน</p>
+                    <input type="number" class="input_data" name="balance">
+                    <p class="checkKey">โปรดใส่ตัวเลขของคุณ</p>
+                    <p class="text_white mr">ดอกเบี้ย %</p>
+                    <input type="number" class="input_data" name="interest">
+                    <p class="checkKey">โปรดใส่ตัวเลขของคุณ</p>
+                    <p class="text_white mr">วันที่</p>
+                    <input type="date" class="input_data" name="datelines">
+                    <p class="checkKey">โปรดใส่วันที่</p>
+                </div>
+                <button type="submit" class="submit" id="bt">บันทึก</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/addData.js" ></script>
+
+</body>
+</html>
